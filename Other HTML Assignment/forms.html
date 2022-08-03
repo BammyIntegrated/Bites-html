@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY PAGE/FORM</title>    
+    </head>
+    <body>
+        <h1 Align="center">Customer Survey</h1>
+        <p>Please take a moment to fill out our customer survey:</p>
+    <form method="Post" Action="/cgi-bin/survey.pl">
+        </form>
+        <br>
+        <h2 Align="center">Registration Form</h2>
+        <p>Please fill the information below:</p>
+        <form method="Post" enctype="text/plain" action="mailto:bammyintegrated.consults@gmail.com">       
+        </form>
+        <h3 align="center"> Beaches Around the World</h3>
+        <h4 align="center">Vote for your favorite beach</h4>
+        <center><img src="Arsenal.jpeg" width="240x268"> </center>
+        <form method="Post" action="cgi-bin/survey.pl"><br>My Favorite Beach is:
+            <input type="text" name="beach" size="50" maxlength="45">
+    </form>
+        <br>
+        <br>
+        <center><font size="5">Customer Survey</font></center>
+        <p>Please take a moment to rate this website</p>
+   <form method="Post" action="/cgi-bin/survey.pl">
+        <input type="radio" name="rating" value="Excellent">Excellent<br>
+        <input type="radio" name="rating" value="Very Good">Very Good<br>
+        <input type="radio" name="rating" value="good">Good
+        <p>Suggestion Comments</p>
+        <br>
+        <textarea name="Comment Box" row="5" cols="65" wrap="hard"></textarea>
+        <p>
+            <input type="Submit" Value="Send">
+            <input type="Reset" value="Reset">
+        </p>
+   </form>
+    <br>
+   <br>
+   <h5 align="center">Music Survey</h5>
+   <form method="Post" Action="/cgi-bin/survey.pl">
+        <p>We would like to serve you better! Please tell us about your listening interest:</p>
+        <br><input type="checkbox" name="Music" value="Jazz">Jazz
+        <br><input type="checkbox" name="Music" Value="R&B">R&B
+        <br><input type="checkbox" name="Music" Value="Rock">Rock
+   </form>
+    <br>
+    <h6 align="center">Customer Survey</h6>
+    <p>Please select your page:</p>
+    <form method="Post" action="/cgi-bin/survey.pl">
+        <select name="age" size="4">
+            <option value="Child">Under-12years</option>
+            <option value="Teen">13-19Years</option>
+            <option value="Adult">20-64Years</option>
+            <option value="Senior">65 or Older</option>
+        </select>
+    </form>
+    <br>
+    <p><b>Interestedin working for our company? Please fill out the information below</b></p>
+    <form method="Post" Action="mailto:bammyintegrated.consults@gmail.com" enctype="multipart/form-data">
+        <br><input type="radio" Name="Sex" Value="Male">Mr
+        <br><input type="radio" Name="Sex" Value="Male">Mrs
+        <p>First Name:<input type="text" Name="Name" size="25">
+        <br>Files:<input type="File" Name=" Resume" size="45">
+        <input type="file" Name="User Image" Accept="image/gif, image/jpeg, image/png"></p>
+        <p><input type="submit" Value="send"></p>
+    </form>
+    <br>
+    <br>
+    <p>Please take a moment to provide uswith yourfeedback:</p>
+    <form method="Post" Action="/cgi-bin/survey.pl">
+        Comments:<textarea name="comment box" rows="5" cols="50"wrap></textarea>
+        <p>Click your region below to submit your comments:<input type="submit" 
+            onclick="return confirm('Do you wish to send information?')"></p>
+    </form>
+    <br>
+    <br>
+    <h6 align="center">Fill out the following informationso we can serve you better:</h6>
+    <form method="Post" action="/cgi-bin/customers.pl">
+        <fieldset>
+            <legend align="left">Required information</legend>
+            <br>Name:<input type="text" Name="Name" Size="30" maxlength="15">
+            <br>
+            <br> Credit card:<input type="password" name="credit" size="30" maxlength="15"><br>
+            <br>Address:<textarea name="address" rows="3" cols="30"wrap></textarea>
+        </fieldset>
+        <p>What is your salary range?
+            <br><input type="radio" name="salary" value="Over 30">Over 50,000.00
+            <br><input type="radio" name="salary" value="35 to 50"> 35,000-50,000
+            <br><input type="radio" name="salary" value="20-34">20,000-34,000
+            <br>Credit Card:<input type="Password" Name="Credit" Size="30" maxlength="15">
+        </p>
+    </form>
+    <br>
+    <br>
+    <h7 align="center">Feedback Form</h7>
+    <p>Please take a moment to provide us with your feedback:</p>
+    <form method="Post" Action="/cgi-bin/survey.pl">
+        Comments:<textarea name="comment box" rows="5" cols="50" wrap></textarea>
+        <p>Click your region below to submit your comments:<input type="submit" 
+        onclick="return confirm('Do you wish to send information?')"> </p>
+    </form>
+</body>
+</html>
